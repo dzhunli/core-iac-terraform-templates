@@ -45,5 +45,5 @@ jobs:
       run: |
         echo "### Terraform Linting Warnings:" >> $GITHUB_STEP_SUMMARY
         echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-        tflint --config=ci-conf/.tflint.hcl --chdir=./  --recursive >> $GITHUB_STEP_SUMMARY
+        tflint --config=ci-conf/.tflint.hcl --chdir=./modules  --recursive >> $GITHUB_STEP_SUMMARY
         echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
